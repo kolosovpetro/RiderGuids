@@ -1,15 +1,31 @@
 <idea-plugin require-restart="true">
-  <id>com.jetbrains.rider.plugins.riderguids</id>
-  <name>RiderGuids</name>
-  <version>_PLACEHOLDER_</version>
-  <vendor url="https://project-url">Author</vendor>
-  <idea-version since-build="_PLACEHOLDER_" until-build="_PLACEHOLDER_" />
-  <depends>com.intellij.modules.rider</depends>
+    <id>me.razumovsky.rider.plugins.riderguids</id>
+    <name>Rider Guids</name>
+    <version>1.0.0</version>
+    <vendor url="https://github.com/kolosovpetro">Petro Kolosov</vendor>
+    <idea-version since-build="2022.1.1"/>
+    <depends>com.intellij.modules.rider</depends>
 
-  <description>
-<![CDATA[
-<p>Sample description</p>
+    <description>
+        <![CDATA[
+<p>This plugin generates in-place guid inside C# code using Jetbrains Rider.</p>
+<p>
+<strong>Features</strong>
+<ul>
+<li>Add Guid instance here (lowercase)</li>
+<li>Add Guid string here (lowercase)</li>
+<li>Add Guid instance here (uppercase)</li>
+<li>Add Guid string here (uppercase)</li>
+</ul>
+</p>
+<p>
+<strong>Links</strong>
+<ul>
+  <li><a href="https://github.com/kolosovpetro/RiderGuids">GitHub</a>
+  <li><a href="https://github.com/kolosovpetro/RiderGuids/issues">Issues</a>
+</ul>
+</p>
 ]]>
-  </description>
+    </description>
 
 </idea-plugin>

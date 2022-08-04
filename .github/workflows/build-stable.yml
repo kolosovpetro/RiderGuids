@@ -1,0 +1,24 @@
+name: Build (Stable)
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches:
+      - develop
+      - master
+  workflow_dispatch:
+
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📝 Fetch Sources
+        uses: actions/checkout@v2
+
+      - name: 🛠 Prepare Build Environment
+        uses: ./.github/workflows/prepare-build-env
+
+      - name: 🏗 Build Plugin (Stable)
+        run: |
+          chmod +x gradlew
+          ./gradlew buildPlugin
