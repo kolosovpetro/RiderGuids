@@ -11,6 +11,7 @@ using JetBrains.ReSharper.Resources.Shell;
 using JetBrains.ReSharper.TestRunner.Abstractions.Extensions;
 using JetBrains.TextControl;
 using JetBrains.Util;
+using ReSharperPlugin.RiderGuids;
 
 namespace ReSharperPlugin.CodeInspections;
 
@@ -38,24 +39,11 @@ public class AddUpperCaseGuidStringContextAction : ContextActionBase
 
     protected override Action<ITextControl> ExecutePsiTransaction(ISolution solution, IProgressIndicator progress)
     {
-        var declaration = _provider.GetSelectedElement<ICSharpStatement>();
+        var newGuid = Guid.NewGuid().ToString().ToUpper();
+        var statementText = $"var guidUpperString = \"{newGuid}\";";
 
-        if (declaration == null)
-        {
-            return null;
-        }
+        var result = RiderGuidsHelper.AddGuidAfterToken(_provider, statementText);
 
-        using (WriteLockCookie.Create())
-        {
-            var elementFactory = CSharpElementFactory.GetInstance(declaration);
-            var newGuid = Guid.NewGuid().ToString().ToUpper();
-            var statementText = $"var guidUpperString = \"{newGuid}\";";
-            var newToken = elementFactory.CreateStatement(statementText);
-
-            var oldToken = _provider.TokenAfterCaret.NotNull();
-            newToken = ModificationUtil.AddChildAfter(oldToken, newToken);
-
-            return x => x.Caret.MoveTo(newToken.GetDocumentEndOffset(), CaretVisualPlacement.DontScrollIfVisible);
-        }
+        return result;
     }
 }
