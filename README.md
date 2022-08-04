@@ -4,7 +4,9 @@
   <img src="img/pluginIcon.png" width="200" height="200"  alt="Rider Guids Logo"/>
 </p>
 
-Generates in-place guid inside C# code using Jetbrains Rider.
+[![Build (Stable)](https://github.com/kolosovpetro/RiderGuids/actions/workflows/build-stable.yml/badge.svg)](https://github.com/kolosovpetro/RiderGuids/actions/workflows/build-stable.yml)
+
+Generates in-place GUID instance inside C# code using Jetbrains Rider.
 
 ### Features
 
