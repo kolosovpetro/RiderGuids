@@ -1,9 +1,11 @@
 name: Build (Stable)
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
   pull_request:
-    branches: [ develop ]
+    branches:
+      - develop
+      - master
   workflow_dispatch:
 
 jobs:
@@ -15,11 +17,6 @@ jobs:
 
       - name: 🛠 Prepare Build Environment
         uses: ./.github/workflows/prepare-build-env
-
-#      - name: 🏗 Build Plugin (Stable)
-#        uses: gradle/gradle-build-action@v2
-#        with:
-#          arguments: buildPlugin
 
       - name: 🏗 Build Plugin (Stable)
         run: |
