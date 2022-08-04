@@ -15,7 +15,7 @@ Generates in-place guid inside C# code using Jetbrains Rider.
 
 ### Example of use
 
-<p align="center">
+<p>
   <img src="img/rider-guids-example.gif" alt="Rider Guids Logo"/>
 </p>
 
