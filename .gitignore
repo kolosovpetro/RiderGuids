@@ -24,4 +24,9 @@ _dotTrace*
 # rd-gen output
 *.Generated.cs
 *.Generated.kt
+
+# notepad++ backup ignore
 *.bak
+
+# dotnet
+/src/dotnet/.idea
