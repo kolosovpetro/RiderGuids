@@ -49,7 +49,7 @@ public class AddUpperCaseGuidStringContextAction : ContextActionBase
         {
             var elementFactory = CSharpElementFactory.GetInstance(declaration);
             var newGuid = Guid.NewGuid().ToString().ToUpper();
-            var statementText = $"var newGuidAsString = \"{newGuid}\";";
+            var statementText = $"var guidUpperString = \"{newGuid}\";";
             var newToken = elementFactory.CreateStatement(statementText);
 
             var oldToken = _provider.TokenAfterCaret.NotNull();

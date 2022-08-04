@@ -47,7 +47,7 @@ public class AddUpperCaseGuidInstanceContextAction : ContextActionBase
         {
             var elementFactory = CSharpElementFactory.GetInstance(declaration);
             var newGuid = Guid.NewGuid().ToString().ToUpper();
-            var statementText = $"var newGuid = new Guid(\"{newGuid}\");";
+            var statementText = $"var guidUpperInstance = new Guid(\"{newGuid}\");";
             var newToken = elementFactory.CreateStatement(statementText);
 
             var oldToken = _provider.TokenAfterCaret.NotNull();
