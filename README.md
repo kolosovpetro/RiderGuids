@@ -23,7 +23,7 @@ Generates in-place GUID instance inside C# code using Jetbrains Rider.
 
 ### How to install
 
-#### Using marketplace:
+#### Using marketplace (not yet released):
 
 1. Go to `Settings` / `Plugins` / `Marketplace`
 1. Search for "Rider Guids"
