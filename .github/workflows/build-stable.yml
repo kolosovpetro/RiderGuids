@@ -22,4 +22,6 @@ jobs:
 #          arguments: buildPlugin
 
       - name: 🏗 Build Plugin (Stable)
-        run: ./gradlew buildPlugin
+        run: |
+          chmod +x gradlew
+          ./gradlew buildPlugin
