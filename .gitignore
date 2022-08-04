@@ -24,3 +24,4 @@ _dotTrace*
 # rd-gen output
 *.Generated.cs
 *.Generated.kt
+*.bak
