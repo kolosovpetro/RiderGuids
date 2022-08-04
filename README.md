@@ -17,6 +17,10 @@ Generates in-place GUID instance inside C# code using Jetbrains Rider.
 
 ### Example of use
 
+- Recall context action using `Alt + Enter`
+- Choose desired `RiderGuids` option
+- Enjoy
+
 <p>
   <img src="img/rider-guids-example.gif" alt="Rider Guids Logo"/>
 </p>
