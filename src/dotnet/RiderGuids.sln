@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.RiderGuids", "ReSharperPlugin.RiderGuids\ReSharperPlugin.RiderGuids.csproj", "{EFFFD7A4-6008-49D3-8DF3-1D7D7F98DDAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.RiderGuids.Rider", "ReSharperPlugin.RiderGuids\ReSharperPlugin.RiderGuids.Rider.csproj", "{3DE615D5-8041-41F2-84F1-215820368788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharperPlugin.RiderGuids.Tests", "ReSharperPlugin.RiderGuids.Tests\ReSharperPlugin.RiderGuids.Tests.csproj", "{15DC0104-06BF-4D66-9A6D-474AA2DD000A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFFD7A4-6008-49D3-8DF3-1D7D7F98DDAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFFD7A4-6008-49D3-8DF3-1D7D7F98DDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFFD7A4-6008-49D3-8DF3-1D7D7F98DDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFFD7A4-6008-49D3-8DF3-1D7D7F98DDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE615D5-8041-41F2-84F1-215820368788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE615D5-8041-41F2-84F1-215820368788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE615D5-8041-41F2-84F1-215820368788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE615D5-8041-41F2-84F1-215820368788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15DC0104-06BF-4D66-9A6D-474AA2DD000A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DC0104-06BF-4D66-9A6D-474AA2DD000A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DC0104-06BF-4D66-9A6D-474AA2DD000A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DC0104-06BF-4D66-9A6D-474AA2DD000A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
